@@ -18,7 +18,6 @@ export const env = createEnv({
    */
   client: {
     NEXT_PUBLIC_STRIPE_CLIENT_ID: z.string().min(1),
-    NEXT_PUBLIC_VERCEL_URL: z.string().min(1),
     // NEXT_PUBLIC_CLIENTVAR: z.string().min(1),
   },
 
@@ -28,7 +27,6 @@ export const env = createEnv({
    */
   runtimeEnv: {
     NEXT_PUBLIC_STRIPE_CLIENT_ID: process.env.NEXT_PUBLIC_STRIPE_CLIENT_ID,
-    NEXT_PUBLIC_VERCEL_URL: process.env.NEXT_PUBLIC_VERCEL_URL,
     NODE_ENV: process.env.NODE_ENV,
     STRIPE_KEY: process.env.STRIPE_KEY,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
