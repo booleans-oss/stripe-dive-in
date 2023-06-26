@@ -29,6 +29,8 @@ export default async function handler(
     return;
   }
 
+  console.log('user id: ', userId)
+
   localStorage.setItem("stripe_access_token", userId);
 
   res.redirect("/");
