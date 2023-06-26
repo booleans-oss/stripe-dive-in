@@ -18,7 +18,7 @@ export default function Home() {
           </h1>
           <Link
             className={styles.card}
-            href={`https://connect.stripe.com/oauth/authorize?response_type=code&client_id=${env.NEXT_PUBLIC_STRIPE_CLIENT_ID}&scope=read_only&redirect_uri=https://stripe-dive-in.vercel.app/api/stripe/callback`}
+            href={`https://connect.stripe.com/oauth/authorize?response_type=code&client_id=${env.NEXT_PUBLIC_STRIPE_CLIENT_ID}&scope=read_write&redirect_uri=https://stripe-dive-in.vercel.app/api/stripe/callback`}
             target="_blank"
           >
             <h3 className={styles.cardTitle}>Connect →</h3>
